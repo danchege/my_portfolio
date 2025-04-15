@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="images/profile.jpg" alt="Daniel Chege" class="profile-image">
+            </div>
+            <h1>Hi, I'm <span class="highlight">Daniel Chege</span></h1>
+            <p>Web Developer & Designer</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button">Get in Touch</a>
+                <a href="documents/Daniel Chege cv.pdf" target="_blank" class="cv-button">View CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate web developer with expertise in creating beautiful and functional websites. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Bachelor of Science in Community and Development</h3>
+                    <p class="institution">Jaramogi Oginga Odinga University of Science and Technology</p>
+                    <p class="duration">2016 - 2020</p>
+                    <p class="description">Relevant coursework and achievements during the program.</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Web Development Certification</h3>
+                    <p class="institution">Alisson Academy</p>
+                    <p class="duration">2021</p>
+                    <p class="description">Specialized training in modern web development technologies.</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Software Development</h3>
+                    <p class="institution">PLP Academy</p>
+                    <p class="duration">2024 - Present</p>
+                    <p class="description">Currently pursuing advanced software development skills and modern programming practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h3>Chronics Empire Website</h3>
+                <p>A modern and responsive website for Chronics Empire, featuring a clean design and smooth user experience.</p>
+                <div class="project-links">
+                    <a href="https://danchege.github.io/chronics-empire-website/" target="_blank" class="demo-link">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/danchege/chronics-empire-website.git" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h3>Peter Asiyo Website</h3>
+                <p>A simple portfolio website with a modern design in HTML and CSS.</p>
+                <div class="project-links">
+                    <a href="https://danchege.github.io/peter-asiyo/" target="_blank" class="demo-link">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/danchege/peter-asiyo.git" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Personal Portfolio Website</h3>
+                <p>A modern portfolio website built with HTML, CSS, and JavaScript, featuring a black and blue theme with glowing effects.</p>
+                <div class="project-links">
+                    <a href="https://danchege.github.io/my-portfolio/" target="_blank" class="demo-link">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/danchege/my-portfolio.git" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-items">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-items">
+                    <span>Node.js</span>
+                    <span>Python</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="email" id="email" placeholder="Your Email" required />
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-button">Send</button>
+              </form>
+              
+            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    // Initialize EmailJS
+                    emailjs.init("-qO9nsFXC7nNbxi74"); // Replace with your Public Key
+        
+                    const form = document.getElementById("contactForm");
+        
+                    if (!form) {
+                        console.error("Form with ID 'contactForm' not found.");
+                        return;
+                    }
+        
+                    form.addEventListener("submit", function(event) {
+                        event.preventDefault();
+        
+                        const formData = {
+                            from_name: document.getElementById("name").value,
+                            from_email: document.getElementById("email").value,
+                            message: document.getElementById("message").value,
+                        };
+        
+                        emailjs.send("service_jwceu8t", "template_ycqpqm9", formData)
+                            .then(response => {
+                                console.log("SUCCESS!", response);
+                                alert("Message sent successfully!");
+                                form.reset();
+                            })
+                            .catch(error => {
+                                console.error("FAILED...", error);
+                                alert("Failed to send message. Please try again.");
+                            });
+                    });
+                });
+            </script>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:danychege28@gmail.com">danychege28@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+254713332171">+254 713332171</a></p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254713332171">WhatsApp</a></p>
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="images/github.png" alt="GitHub" class="social-icon"></a>
+                <a href="#"><img src="images/Linkedin.jpg" alt="LinkedIn" class="social-icon"></a>
+                <a href="#"><img src="images/twitter.jpg" alt="Twitter" class="social-icon"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Daniel Chege. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
