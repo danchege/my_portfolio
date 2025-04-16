@@ -67,40 +67,4 @@ document.querySelector('.contact-form').addEventListener('submit', function (e) 
         e.preventDefault();
         alert('Please fill out all fields.');
         return;
-    }
-
-    // Email validation
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-        e.preventDefault();
-        alert('Please enter a valid email address.');
-        return;
-    }
-
-    alert('Your message has been sent successfully!');
-});
-
-// Initialize EmailJS
-emailjs.init('-qO9nsFXC7nNbxi74'); // Replace with your Public Key
-
-// Handle form submission
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    const formData = {
-        from_name: document.getElementById('name').value,
-        from_email: document.getElementById('email').value,
-        message: document.getElementById('message').value,
-    };
-
-    emailjs
-        .send('service_jwceu8t', 'template_ycqpqm9', formData)
-        .then(response => {
-            console.log('SUCCESS!', response);
-            alert('Message sent successfully!');
-        })
-        .catch(error => {
-            console.error('FAILED...', error);
-            alert('Failed to send message. Please try again.');
-        });
-});
+    }});
