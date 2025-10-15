@@ -1,1 +1,1 @@
-live demo: https://danchege.github.io/my-website/
+live demo: https://danchege.github.io/my_portfolio/
